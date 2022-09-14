@@ -6,8 +6,7 @@ WORKDIR /
 
 # install build tools
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends  software-properties-common\
-  build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 \ 
+  && apt-get install -y --no-install-recommends curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake \
   # cleanup
   && rm -rf /var/lib/apt/lists/*
 
