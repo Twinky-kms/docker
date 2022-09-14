@@ -48,4 +48,4 @@ VOLUME /root/.pigeon
 ENV IP = 1.1.1.1
 ENV KEY = blsprivkey 
 
-ENTRYPOINT pigeond -printtoconsole -listen -maxconnections=256 -externalip=$IP -bind=$IP -masternodeblsprivkey=$KEY
+ENTRYPOINT pigeond -printtoconsole -listen -externalip=$IP -bind=$IP -masternodeblsprivkey=$KEY
